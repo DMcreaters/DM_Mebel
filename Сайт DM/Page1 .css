@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Пространство между контейнерами */
+}
+
+.container {
+    border: 2px solid #ccc;
+    border-radius: 8px; /* Скругленные углы */
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: transform 0.2s; /* Плавный эффект при наведении */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.image-preview {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Скругленные углы для изображения */
+}
+
+.description {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.description h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.description p {
+    font-size: 14px;
+    color: #555;
+}
